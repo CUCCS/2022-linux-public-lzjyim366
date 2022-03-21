@@ -79,7 +79,7 @@ rpm -ivh name.rpm
 Ubuntu中：
 
 ```shell
-dpkg -l name#dpkg查看软件安装的相关信息
+dpkg -l name #dpkg查看软件安装的相关信息
 where is name
 which name
 ```
@@ -87,8 +87,8 @@ which name
 CentOS中：
 
 ```shell
-yum search name#yum查询
-rpm -qal |grep name#rpm查看所有安装包的文件存储位置
+yum search name #yum查询
+rpm -qal |grep name #rpm查看所有安装包的文件存储位置
 where is name
 which name
 ```
@@ -98,12 +98,12 @@ which name
 Ubuntu中：
 
 ```shell
-apt remove name#卸载，保留配置
-apt purge name#卸载，删除配置
-apt clean name#删除缓存文件
-apt autoremove name#卸载并移除依赖
-dpkg -r name#卸载，保留配置
-dpkg -P name#卸载，不保留配置
+apt remove name #卸载，保留配置
+apt purge name #卸载，删除配置
+apt clean name #删除缓存文件
+apt autoremove name #卸载并移除依赖
+dpkg -r name #卸载，保留配置
+dpkg -P name #卸载，不保留配置
 ```
 
 CentOS中：
@@ -147,28 +147,28 @@ Ubuntu:
 
 ```shell
 #gzip
-gzip TEST#压缩后，不保留源文件
-gzip -d TEST.gz#解压后，不保留压缩文件
+gzip TEST #压缩后，不保留源文件
+gzip -d TEST.gz #解压后，不保留压缩文件
 
 #bzip2
-bzip2 TEST#压缩后，不保留源文件
-bzip2 -d TEST.bz2#解压后，不保留压缩文件
+bzip2 TEST #压缩后，不保留源文件
+bzip2 -d TEST.bz2 #解压后，不保留压缩文件
 
 #zip
-zip TEST.zip TEST#压缩后，保留源文件
-unzip TEST.zip#解压后，保留压缩文件
+zip TEST.zip TEST #压缩后，保留源文件
+unzip TEST.zip #解压后，保留压缩文件
 
 #tar
-tar -zcvf TEST.tgz TEST#压缩后，保留源文件
-tar -zxvf test.tgz#解压后，保留压缩文件
+tar -zcvf TEST.tgz TEST #压缩后，保留源文件
+tar -zxvf test.tgz #解压后，保留压缩文件
 
 #7zr
-7zr a -t7z TEST.7Z *#还可以添加-r参数 表示级联压缩
+7zr a -t7z TEST.7Z * #还可以添加-r参数 表示级联压缩
 #压缩后，保留源文件
-7zr x TEST.7z#解压后，保留压缩文件
+7zr x TEST.7z #解压后，保留压缩文件
 
 #rar
-rar x TEST.rar#解压后，保留压缩文件
+rar x TEST.rar #解压后，保留压缩文件
 
 ```
 
@@ -188,7 +188,7 @@ unzip TEST.zip
 tar -zcvf TEST.tgz TEST
 tar -zxvf test.tgz
 #7zr
-7za a -t7z TEST.7Z *#注意，与ubuntu有所不同哦
+7za a -t7z TEST.7Z * #注意，与ubuntu有所不同哦
 7za x TEST.7z
 #rar
 rar x TEST.rar
@@ -213,7 +213,7 @@ sudo fdisk -l |grep "Disk /dev/sd" # 硬盘数量和大小
 CentOS
 
 ```shell
-cat /proc/cpuinfo# 查看CPU信息
+cat /proc/cpuinfo # 查看CPU信息
 free -m # 查看内存情况
 df -hl # 查看磁盘剩余空间
 df -h # 查看每个根路径的分区大小
